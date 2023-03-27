@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from "./components/Login-C/Login";
+import ConnectWith from "./components/ConnectWith-C/ConnectWith";
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+  return(
+    <main className="main capitalize w-screen h-screen bg-gradient-to-br from-[#d7c4fc] to-[#97c7f7]">
+      <Login />
+      <ConnectWith />
+    </main>
   );
+
 }
 
-export default App;
+export default App
